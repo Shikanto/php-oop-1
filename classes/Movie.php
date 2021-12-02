@@ -14,6 +14,8 @@ class Movie{
         $this -> setPlotFilm($_plotFilm);
     }
 
+    /********** FUNCTION SET **********/  
+
     public function setTitleFilm($newTitleFilm) {
         $this->titleFilm = $newTitleFilm;
     }
@@ -31,6 +33,8 @@ class Movie{
     
     }
 
+    /********** FUNCTION GET **********/  
+
     public function getTitleFilm(){
         return $this -> titleFilm;
     }
@@ -46,7 +50,8 @@ class Movie{
     public function getPlotFilm(){
         return $this -> plotFilm;
     }
-    
+     
+
     public function getInfoFilm(){
         return "Titolo: " . $this -> getTitleFilm() . "<br> " . 
                 "Durata: " . $this-> getTLenghtFilm() . "<br>" . 
